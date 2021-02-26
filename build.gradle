@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.0'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+ext.jmonkeyengineVersion = '3.3.2-stable'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation "org.jmonkeyengine:jme3-core:$jmonkeyengineVersion"
+    implementation "org.jmonkeyengine:jme3-plugins:$jmonkeyengineVersion"
+    implementation "org.jmonkeyengine:jme3-effects:$jmonkeyengineVersion"
+    implementation "org.jmonkeyengine:jme3-desktop:$jmonkeyengineVersion"
+
+    runtimeOnly "org.jmonkeyengine:jme3-lwjgl:$jmonkeyengineVersion"  // LWJGL 2.x
+    //runtimeOnly "org.jmonkeyengine:jme3-lwjgl3:$jmonkeyengineVersion" // LWJGL 3.x
+
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
