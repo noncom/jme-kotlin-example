@@ -1,3 +1,5 @@
+package org.example.game
+
 object Launcher {
 
     @JvmStatic

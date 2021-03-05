@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.kotlin.jvm' version '1.4.0'
+    id 'org.jetbrains.kotlin.jvm' version '1.4.30'
 }
 
 group 'org.example'
@@ -21,7 +21,6 @@ dependencies {
 
     runtimeOnly "org.jmonkeyengine:jme3-lwjgl:$jmonkeyengineVersion"  // LWJGL 2.x
     //runtimeOnly "org.jmonkeyengine:jme3-lwjgl3:$jmonkeyengineVersion" // LWJGL 3.x
-
 }
 
 compileKotlin {
