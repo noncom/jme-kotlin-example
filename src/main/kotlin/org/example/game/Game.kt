@@ -10,7 +10,6 @@ import com.jme3.scene.Geometry
 import com.jme3.scene.LightNode
 import com.jme3.scene.shape.Box
 
-
 class Game : SimpleApplication() {
 
     override fun simpleInitApp() {
